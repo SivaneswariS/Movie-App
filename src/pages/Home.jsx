@@ -8,7 +8,7 @@ import { data } from "react-router-dom";
 const Home = () => {
 
   const [movies, setMovies]= useState ([]);
-  const [page, setPage]= useState ([1]);
+  const [page, setPage]= useState (1);
   const [search, setSearch]= useState ("");
   useEffect (()=>{
     let url = `https://api.themoviedb.org/3/movie/popular?page=${page}&api_key=725939c7a3ed60964d110e56412c582a`;
